@@ -1,0 +1,28 @@
+{
+    "autores": [
+      {
+        "id": 1,
+        "nombre": "Gabriel García Márquez",
+        "fechaNacimiento": "1927-03-06"
+      },
+      {
+        "id": 2,
+        "nombre": "Isabel Allende",
+        "fechaNacimiento": "1942-08-02"
+      }
+    ],
+    "libros": [
+      {
+        "id": 1,
+        "titulo": "Cien años de soledad",
+        "autorId": 1,
+        "disponible": true
+      },
+      {
+        "id": 2,
+        "titulo": "La casa de los espíritus",
+        "autorId": 2,
+        "disponible": false
+      }
+    ]
+  }
