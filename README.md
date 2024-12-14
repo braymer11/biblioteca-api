@@ -13,7 +13,7 @@ Este proyecto es una API de biblioteca simple creada con Node.js y Express. Perm
 
 1. Clona el repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/tu-usuario/biblioteca-api.git
+   git clone https://github.com/braymer11/biblioteca-api.git
    ```
 2. Accede a la carpeta del proyecto:
    ```bash
