@@ -1,21 +1,37 @@
-# API Biblioteca
+# Biblioteca API
 
-Este es un backend simple para gestionar una biblioteca, que permite gestionar autores y libros mediante una API REST.
+Este es un proyecto para gestionar una biblioteca utilizando una API REST. Puedes interactuar con los recursos **Autores** y **Libros** a través de los siguientes endpoints.
 
 ## Endpoints
 
-### Autores:
-- **GET /api/autores**: Lista todos los autores.
+### Página Principal
+- **GET** `/`  
+  Devuelve un mensaje indicando que el servidor está corriendo.  
+  Ejemplo: `http://localhost:5000/`
 
-### Libros:
-- **GET /api/libros**: Lista todos los libros.
-- **GET /api/libros/disponibles**: Obtiene los libros disponibles.
-- **GET /api/libros/nodisponibles**: Obtiene los libros no disponibles.
+### Autores
+- **GET** `/api/autores`  
+  Lista todos los autores.  
+  Ejemplo: `http://localhost:5000/api/autores`
 
-## Ejecución
+### Libros
+- **GET** `/api/libros`  
+  Lista todos los libros.  
+  Ejemplo: `http://localhost:5000/api/libros`
 
-1. Clona el repositorio:
+- **GET** `/api/libros/disponibles`  
+  Lista solo los libros disponibles.  
+  Ejemplo: `http://localhost:5000/api/libros/disponibles`
+
+- **GET** `/api/libros/nodisponibles`  
+  Lista solo los libros no disponibles.  
+  Ejemplo: `http://localhost:5000/api/libros/nodisponibles`
+
+## Instalación
+
+Sigue estos pasos para configurar el proyecto en tu máquina local:
+
+1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/biblioteca-api.git
-
+   git clone https://github.com/braymer11/biblioteca-api.git
