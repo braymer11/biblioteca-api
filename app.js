@@ -1,6 +1,10 @@
 const express = require('express');
+const cors = require('cors'); // Importar el paquete cors
 const app = express();
 const port = 5000;
+
+// Usar CORS antes de definir las rutas
+app.use(cors());  // Habilitar CORS para todas las rutas
 
 // Importar rutas
 const bibliotecaRoutes = require('./routes/bibliotecaRoutes');
