@@ -1,17 +1,24 @@
 const express = require('express');
-const cors = require('cors'); // Importar el paquete cors
+const cors = require('cors');
 const app = express();
 const port = 5000;
 
-// Usar CORS antes de definir las rutas
-app.use(cors());  // Habilitar CORS para todas las rutas
+// Configurar CORS para permitir solicitudes desde el dominio de tu frontend
+const corsOptions = {
+  origin: 'https://biblioteca-api-sandy.vercel.app', // Reemplaza con la URL de tu frontend
+  methods: 'GET,POST,PUT,DELETE',                   // Métodos permitidos
+  allowedHeaders: 'Content-Type, Authorization',    // Encabezados permitidos
+};
+
+app.use(cors(corsOptions)); // Habilitar CORS
+app.use(express.json());    // Habilitar JSON para las solicitudes
 
 // Importar rutas
 const bibliotecaRoutes = require('./routes/bibliotecaRoutes');
 
 // Usar las rutas
-app.use('/libros', bibliotecaRoutes);  // Rutas de libros
-app.use('/autores', bibliotecaRoutes); // Rutas de autores
+app.use('/libros', bibliotecaRoutes);
+app.use('/autores', bibliotecaRoutes);
 
 // Ruta principal
 app.get('/', (req, res) => {
@@ -22,3 +29,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
+
