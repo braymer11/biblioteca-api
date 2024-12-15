@@ -1,5 +1,5 @@
 // URL base de la API
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://biblioteca-api-sandy.vercel.app';
 
 // Función para obtener y mostrar datos
 function obtenerDatos(endpoint) {
