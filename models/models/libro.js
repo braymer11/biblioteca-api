@@ -1,12 +1,8 @@
-// models/libro.js
-class Libro {
-    constructor(id, titulo, autorId, disponible) {
-      this.id = id;
-      this.titulo = titulo;
-      this.autorId = autorId;
-      this.disponible = disponible; // true si está disponible, false si no
+class Autor {
+    constructor(id, nombre) {
+        this.id = id;
+        this.nombre = nombre;
     }
-  }
-  
-  module.exports = Libro;
-  
+}
+
+module.exports = Autor;
